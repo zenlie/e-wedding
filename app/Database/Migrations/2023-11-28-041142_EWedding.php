@@ -28,11 +28,11 @@ class EWedding extends Migration
             ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('e_wedding');
+        $this->forge->createTable('acara');
     }
 
     public function down()
     {
-        $this->forge->dropTable('e_wedding');
+        $this->forge->dropTable('acara');
     }
 }

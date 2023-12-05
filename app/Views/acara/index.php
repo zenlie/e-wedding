@@ -27,7 +27,7 @@
             <div class="alert alert-danger alert-dismissible show fade">
                 <div class="alert-body">
                     <button class="close" data-dismiss="alert">x</button>
-                    <b>Success !</b>
+                    <b>Error !</b>
                     <?=session()->getFlashdata('error')?>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                                     <td><?=date('d/m/y', strtotime($value -> date))?></td>
                                     <td><?=$value -> info?></td>
                                     <td>
-                                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                                        <a href="<?=site_url('acara/edit/'.$value->id)?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
                                         <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
                                     </td>
                                 </tr>
